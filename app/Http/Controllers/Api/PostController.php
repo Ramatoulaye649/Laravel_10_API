@@ -140,7 +140,7 @@ class PostController extends Controller
             return response()->json([
                 'status_code'=>200,
                 'status_message'=>'les posts ont été récupéré',
-                'data'=>Post::all(),
+                //'data'=>Post::all(),
                 'current_page'=>$page,
                 'last_page'=>ceil($total/$perPage),
                 'items'=>$result
